@@ -1,0 +1,2 @@
+#!/bin/sh
+ps -fea -u $LOGNAME | awk ' /*netscape/ || /netscape*/ { if ($8 != /^awk/) print $2 } '

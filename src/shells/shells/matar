@@ -1,0 +1,46 @@
+while true
+do
+clear
+echo "|##############################################|"
+echo "|            UNIVERSIDAD DEL VALLE DE MEXICO          |"
+echo "|##############################################|"
+echo "|             1)  Informacion del sistema                               "
+echo "|             2)  Matar proceso                                            "
+echo "|             3)  Regresar al password                                  "
+echo "|             4)  Salir del sistema                                          "
+echo "|##############################################|"
+read opcion
+case $opcion in
+1) 
+clear
+echo "|##################################################|"
+echo "|   Este es un programa hecho en la clase de programacion    |"
+echo "|   avanzada de sistemas.                                                     |"
+echo "|   Este programa despliega los procesos, para asi seleccionar |"
+echo "|   el numero de proceso a matar.                                          |"
+echo "|##################################################|"
+read regre
+;;
+2)
+clear
+echo "|######################################|"
+echo "|  Teclee enter para ver los procesos...              |"
+read e
+echo
+ps -afe | more
+echo
+echo "| Teclee el numero de proceso a matar.            |"
+read proceso
+kill $proceso
+echo "| Presione enter para regresar....."
+read re
+;;
+3)
+echo " regresar al menu............."
+break
+;;
+4)
+exit
+;;
+esac
+done

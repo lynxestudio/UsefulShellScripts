@@ -1,0 +1,10 @@
+#!/bin/bash
+for i in `ls -dr */`
+do 
+ cd $i
+ for j in *.tar.gz
+  do
+    tar -zxvf $j
+  done
+ cd ..
+done

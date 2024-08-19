@@ -1,0 +1,79 @@
+#!/bin/sh
+#######################################################################
+#
+#            Alumnos: Serrano Ranero Rodrigo
+#                     Ruiz Martinez Israel
+#            Materia: Programación Avanzada de sistemas
+#            Profesor: Angel Salinas
+#
+######################################################################
+while true 
+do
+clear
+echo "\t Teclee la clave para entrar al programa: \c"
+read clave
+case $clave in
+rodrigo) 
+clear
+echo "\t----------------------------------------------------------"
+echo "\t   Usuario:  `whoami`                                           "
+echo "\t   Fecha: `date`                       "
+echo "\t                                                             "
+echo "\t             UNIVERSIDAD DEL VALLE DE MEXICO                 "
+echo "\t------------------------------------------------------------"
+echo "\t                                                             "
+echo "\t               9>  Salir del menu                            "
+echo "\t               0>  Informacion del sistema                   "
+echo "\t               1>  Matar procesos                            "
+echo "\t                                                             "
+echo "\t  Teclee su opcion: \c" 
+		read opcion
+case $opcion in
+0) clear
+echo "\t---------------------------------------------------"
+echo "\t      Informacion del sistema                        "
+echo "\t Programa para matar procesos, realizado en"
+echo 
+uname -a
+echo
+echo      
+echo "Presiona <ENTER> para regresar al menu."
+read reg
+;;
+9) clear
+echo " Hasta luego : `whoami` "
+exit
+;;
+1) clear
+echo "----------------------------------------------------"
+echo " Programa para matar procesos                        "
+echo "                                                     "
+echo " *Solo se pueden matar procesos generados por el     "
+echo " usuario, procesos del sistema solo los puede        "
+echo " terminar root                                       "
+echo " Presione <ENTER> para ver los procesos              "
+read cont
+echo "Procesos del usario:                                 "
+echo
+# ps -ef: Visualiza los procesos
+# grep `whoami` para sacar unicamente los procesos del usuario
+# awk '{ print " " $2}' Imprime unicamente ls columnas de procesos del usuario la columna 8 que es el nombre
+#                       del proceso y la columna 2 que es el numero de proceso
+
+ps -ef | grep `whoami` | awk '{ print $8,"   ",$2  }' | more
+echo
+echo "seleccione el numero de proceso a matar."
+read procesoamatar
+# kill -9 para que mate los procesos padres y los hijos
+kill -9 $procesoamatar
+echo
+echo "Pulsa <ENTER> para regresar..."
+read regre
+;;
+*) echo "Opcion no valida."
+esac
+;;
+# aqui por si teclean una opcion no valida
+*) echo "USUARIO NO AUTORIZADO"
+esac
+done

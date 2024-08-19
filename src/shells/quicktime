@@ -1,0 +1,7 @@
+#!/bin/sh
+WINEPREFIX=$HOME/.wine
+export WINEPREFIX
+WINEDBG=/usr/bin/winedbg
+export WINEDBG
+
+wine  --debugmsg -all "C:/Program Files/QuickTime/QuickTimePlayer.exe" $1

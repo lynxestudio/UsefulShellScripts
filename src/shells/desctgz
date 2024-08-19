@@ -1,0 +1,10 @@
+#!/bin/bash
+for i in `ls -dr */`
+do 
+ cd $i
+ for j in *.tgz
+  do
+    tar -zxvf $j
+  done
+ cd /export/revistas/linux_journal
+done

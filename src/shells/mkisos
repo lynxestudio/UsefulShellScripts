@@ -1,0 +1,5 @@
+#!/bin/sh
+
+/usr/bin/mkisofs -J -L -l -v -R -o $1.iso /mnt/cdrom
+
+eject

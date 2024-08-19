@@ -1,0 +1,10 @@
+#!/bin/bash
+
+for i in `ls | cut -d\. -f1 -s`
+ do
+   mkdir $i
+   gunzip -dc $i.tar.gz | tar -xvf - -C $i   
+done
+
+
+# Este shell es para descomprimir las revistas tar.gz y crear su respectivo dir.

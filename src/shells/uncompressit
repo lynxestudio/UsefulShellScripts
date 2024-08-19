@@ -1,0 +1,10 @@
+#!/bin/bash
+
+for i in `ls | cut -d\. -f1 -s`
+ do
+   mkdir $i
+   tar -Zxvf $i.tar.Z -C $i
+done
+
+
+# Este shell es para descomprimir las revistas tar.Z y crear su respectivo dir.

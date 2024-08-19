@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#for i in `
+
+#`/usr/bin/perl -p -e 's/^#m56\:/m56\:/' /etc/inittab > /etc/mod`
+
+cat > miarchivo
+head -1 < miarchivo > quien
+

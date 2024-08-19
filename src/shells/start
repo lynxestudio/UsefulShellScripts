@@ -1,0 +1,14 @@
+#!/bin/sh
+PATH=$PATH:/netscape/suitespot/bin/https; export PATH 
+ORACLE_HOME=/oracle;export ORACLE_HOME
+ORACLE_SID=WG73;export ORACLE_SID
+SERVER_ROOT=/netscape/suitespot
+PRODUCT_NAME=https
+PRODUCT_BIN=uxwdog
+PRODUCT_SUBDIR=/netscape/suitespot/https-bienes
+ 
+cd $SERVER_ROOT/bin/$PRODUCT_NAME
+./$PRODUCT_BIN -d $PRODUCT_SUBDIR/config $@
+if test $? -ne 0 ; then
+	exit 1
+fi

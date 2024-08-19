@@ -1,0 +1,5 @@
+#!/bin/sh
+
+`/usr/bin/perl -p -e 's/^#SL0\:/SL0\:/' /etc/inittab > /etc/mod`
+`/bin/mv /etc/mod /etc/inittab`
+`/sbin/init q`

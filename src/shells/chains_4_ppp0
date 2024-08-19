@@ -1,0 +1,7 @@
+#!/bin/sh
+
+/sbin/ipchains -F forward
+/sbin/ipchains -P forward DENY
+/sbin/ipchains -A forward -s 10.0.0.0/24 -j MASQ
+/sbin/ipchains -A forward -i ppp0 -j MASQ
+/bin/echo 1 > /proc/sys/net/ipv4/ip_forward

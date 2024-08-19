@@ -1,0 +1,20 @@
+#!/usr/sh
+clear
+while true
+do
+echo "|--------------------------------------------|"
+echo "|      UNIVERSIDAD DEL VALLE DE MEXICO       |"
+echo "|                                            |"
+echo "|    `date`            |"
+echo "|                                            |"
+echo "| Por favor teclee su password para ingresar |"
+read micontrasena
+case $micontrasena in
+mortiana) sh veronica
+;;
+*) echo "Usuario no valido"
+echo "Presione <enter> para regresar..."
+read enter
+;;
+esac
+done

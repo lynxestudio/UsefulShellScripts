@@ -1,0 +1,179 @@
+#!/bin/ksh
+
+while
+do
+clear
+
+#######################################################################
+#
+#            Alumno: Veronica Ventura Marcial
+#            Numcta: 96102611
+#            Materia: Programacion de sistemas
+#            Profesor: Angel Salinas
+#
+######################################################################
+echo "\t|#############################################################|"
+echo "\t|   Usuario:  `whoami`                                            |"
+echo "\t|   Fecha: `date`                       |"
+echo "\t|                                                             |"
+echo "\t|                      Agenda personal                        |"
+echo "\t|                                                             |"
+echo "\t|---------------------Menu principal--------------------------|"
+echo "\t|                                                             |"
+echo "\t|                         1) ALTAS                            |"
+echo "\t|                         2) BAJAS                            |"
+echo "\t|                         3) CONSULTAS                        |"
+echo "\t|                         4) CAMBIOS                          |"
+echo "\t|                         9) SALIDA                           |"
+echo "\t|                         0) Sobre ....                       |"
+echo "\t|                                                             |"
+echo "\t|                                                             |"
+echo "\t|-------------------------------------------------------------|"
+echo "\t|  Teclee su opcion: \c" 
+		read opcion
+
+   case $opcion in
+        1) while do
+           clear
+           echo "\t|--------------------------------------------------|"
+           echo "\t|                   Menu de altas                  |"
+           echo "\t| Adicionar una persona a la agenda                |"
+           echo "\n\t Apellido paterno: \c"
+                  read fapepaterno
+           echo "\n\t Apellido materno: \c"
+                  read fapematerno
+           echo "\n\t Nombre: \c"
+                  read nombre
+           echo "\n\t Telefono: \c"
+                  read telefono
+           echo "\n\t Correo electronico: \c"
+                  read email
+           echo "$fapepaterno,$fapematerno,$nombre,\t $telefono \t $email " >> telefonos.txt
+           echo "Persona capturada ...."
+           echo "\n\tPara regresar al menu pulse < q > y despues  < ENTER >  "
+           echo "\tPara capturar otra persona pulse  < ENTER >:\c  "
+           read res
+               case $res in
+                  [Qq]) break ;;
+               esac
+          done
+                ;;
+        2)    
+              while do
+              clear
+              echo "\t|---------------------------------------------|"
+              echo "\t|              Menu de bajas                  |"
+              echo "\t| Eliminar un registro de la agenda           |"
+              echo "\t| Mostrando registros ....                    |\n"
+              cat telefonos.txt
+              echo "\n\t Para eliminar un registro deme el numero de la fila del registro."
+              echo "\t Dame el numero de fila (registro) a eliminar:\c "
+              read n
+              echo "sed '$n d' telefonos.txt > tmp.txt "  > borrar
+              chmod +rx borrar
+              if sh borrar 
+                    then
+                  echo "\t registro eliminado."
+               else
+              echo " Registro no encontrado."
+              fi
+              rm telefonos.txt
+              mv tmp.txt telefonos.txt 
+              echo "\t Pulse  < r > para regresar o <ENTER> para continuar...\c "
+              read tecla
+              case $tecla in
+                    [Rr]) break ;;
+               esac
+              done
+
+                    ;;
+        3) while do
+            clear
+            echo "\t|------------------------------------------------|"
+            echo "\t|             Menu de consultas                  |"
+            echo "\t|  Busquedas de personas                         |"
+            echo "\t\t 1) por apellido paterno      "   
+            echo "\t\t 2) por caracter "
+            echo "\t\t 3) ver todos los registros "
+            echo "\t\t 4) regresar "
+            echo "\t Teclee su tipo de busqueda: \c"
+            read num
+             case $num in
+                   1) echo "\t Dame el apellido paterno :\c"
+                      read apellido
+                      grep $apellido telefonos.txt
+                      echo "Pulse <enter> para otra busqueda ...\c"
+                      read tecla
+                        ;;
+                   2) echo "\t Buscar los que contengan un caracter en especial"
+                      echo "\t Dame el caracter a buscar: \c"
+                      read letra
+                      grep $letra telefonos.txt
+                      echo "Pulse <enter> para otra busqueda ...\c"
+                      read tecla
+                        ;;
+                   3) echo " Registros capturados....\n\n"
+                      cat telefonos.txt
+                      echo "\n\nPulse <enter> para otra busqueda ...\c"
+                      read tecla
+                      ;;
+                   4) break ;;
+             esac
+            done
+                   ;;
+        4)   while do
+              clear
+              echo "\t |-------------------------------------------------|"
+              echo "\t |              Menu de cambios                    |"
+              echo "\t | Mostrando todos los registros....               |"
+              echo
+              cat telefonos.txt
+              echo "\n\tPara hacer cambios a un registro siga las siguientes instrucciones"
+              echo "\t Teclee el numero de la fila donde se encuentra el registro a cambiar"
+              echo "\t Dame el numero de la fila: \c"
+                    read num
+              echo "Dame la palabra que quieres sustituir: \c"
+                   read cadena
+              echo "Dame la nueva palabra que la sustituira: \c"
+                   read cadena2
+             echo " sed '$num s/$cadena/$cadena2/' telefonos.txt > tmp2.txt " > cambios
+             chmod +rx cambios
+             if sh cambios 
+                   then
+                 echo "Registro cambiado."
+                 else
+                 echo "Registro no encontrado."
+              fi
+              rm telefonos.txt
+              mv tmp2.txt telefonos.txt
+              cat telefonos.txt
+              echo "\n presiona < ENTER > para continuar ... "
+              read tecla
+              break
+             done
+              
+               ;;
+        9)
+               clear
+               echo "\n\n Cerrando la agenda ..." 
+               exit 2
+               ;;
+        0) clear
+           echo "\t|---------------------------------------------|"
+           echo "\t|       Universidad del Valle de Mexico       |"
+           echo "\t|                                             |"
+           echo "\t|              Agenda Personal                | "
+           echo "\t|                                             |"
+           echo "\t|    Realizado por: Veronica Ventura Marcial  |"
+           echo "\t|                                             |"
+           echo "\t|    Numcta: 96102611                         |"
+           echo "\t|                                             |"
+           echo "\t|     Profesor: Angel Salinas                 |"
+           echo "\t|                                             |"
+           echo "\t|     presiona <enter> para continuar...      |"
+           echo "\t|---------------------------------------------|"
+            read tecla
+              ;;
+        *) ;;
+   esac
+done

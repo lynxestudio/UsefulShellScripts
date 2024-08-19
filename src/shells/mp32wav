@@ -1,0 +1,10 @@
+#!/bin/bash
+
+ls *.mp3 | cut -d\. -f1 > lista
+
+for i in `cat lista`
+do
+`mpg123 -b 10000 -s $i.mp3 | sox -t raw -r 44100 -s -w -c2 - $i.wav`
+done
+
+rm -f lista

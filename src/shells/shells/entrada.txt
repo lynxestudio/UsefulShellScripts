@@ -1,0 +1,14 @@
+#!/usr/ksh
+login = "pas211"
+echo "|--------------------------------------------|"
+echo "|      UNIVERSIDAD DEL VALLE DE MEXICO       |"
+echo "|                                            |"
+echo "|    `date`                    |"
+echo "|                                            |"
+echo "| Por favor teclee su password para ingresar |"
+read p
+if p = $pass
+	echo "Entro "
+fi
+
+

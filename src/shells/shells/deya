@@ -1,0 +1,18 @@
+#!/bin/sh
+while true 
+do
+clear
+echo "\t|####################################|"
+echo "\t Teclee la clave para entrar al programa: \c"
+echo "\t|####################################|"
+read clave
+case $clave in
+de) 
+sh matar
+echo "hola"
+;;
+*) echo "Acceso denegado"
+exit
+;;
+esac
+done

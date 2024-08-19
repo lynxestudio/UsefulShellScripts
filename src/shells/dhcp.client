@@ -1,0 +1,10 @@
+#!/bin/sh
+
+echo "/bin/domainname nuclecu.unam.mx
+
+> /etc/hosts
+
+echo \"127.0.0.1	localhost.localdomain localhost loopback
+127.0.0.1	$HOSTNAME.nuclecu.unam.mx $HOSTNAME\" > /etc/hosts
+
+/etc/rc.d/init.d/lpd restart" > /etc/rc.local
