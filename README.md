@@ -15,11 +15,6 @@ When we execute a shell script, the shell intepreter goes through the ASCII text
 </p>
 <p>
 <ul>
-<li><b>ShowFileSystemUse.sh:</b> Displays the size of the filesystems.</li>
-<li><b>UncompressAll.sh</b> Uncompresses all compress files in a folder.</li>
-<li><b>GetFilesAndFolders.sh</b> Counts the files and folders in a folder.</li>
-<li><b>ShowMyProcs.sh</b> Show the processes the current user is running.</li>
-<li><b>PgAgent.sh</b> Starts or stops Postgres Server.</li>
-<li><b>MakeThumbnails.sh</b> Makes thumbnail of images</li>
+<li><b>countFolders.sh:</b> Counts the total number of folder in a given path.</li>
 </ul>
 </p>
