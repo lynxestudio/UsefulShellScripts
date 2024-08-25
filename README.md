@@ -16,5 +16,6 @@ When we execute a shell script, the shell intepreter goes through the ASCII text
 <p>
 <ul>
 <li><b>countFolders.sh:</b> Counts the total number of folder in a given path.</li>
+<li><b>countFiles.sh</b> Counts the total of files in a given path (same logic that countFolder).</li>
 </ul>
 </p>
