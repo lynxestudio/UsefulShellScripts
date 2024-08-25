@@ -1,4 +1,0 @@
-echo off
-echo -n teclee un nombre:
-read   nombre
-

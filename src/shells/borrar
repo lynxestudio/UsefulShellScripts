@@ -1,1 +1,0 @@
-sed '1 d' telefonos.txt > tmp.txt 

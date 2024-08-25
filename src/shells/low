@@ -1,9 +1,0 @@
-#!/bin/sh
-ls *.wav | cut -d. -f1 > lista
-
-for i in `cat lista`
-do
-`lame -b 24 -s 22.05 $i.wav $i.mp3`
-done
-
-rm -f lista

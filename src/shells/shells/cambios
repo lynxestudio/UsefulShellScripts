@@ -1,1 +1,0 @@
- sed '1 s/peres/perez/' telefonos.txt > tmp2.txt 

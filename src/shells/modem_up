@@ -1,7 +1,0 @@
-#!/bin/sh
-
-/bin/chmod +s /usr/sbin/pppd
-/bin/chmod 666 /dev/ttySL0
-/bin/rm -f /var/lock/LCK*
-#/bin/echo 1 > /proc/sys/net/ipv4/ip_forward
-/etc/ppp/Iptables_4_ppp0

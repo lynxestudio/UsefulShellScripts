@@ -1,9 +1,0 @@
-#!/bin/bash
-
-for i in `ls | cut -d\. -f1 -s`
- do
-   mkdir $i
-   unzip  $i.zip -d $i
-done
-
-# Este shell es para descomprimir los archivos zip y crear su respectivo dir.

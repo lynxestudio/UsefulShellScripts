@@ -1,3 +1,0 @@
-#!/bin/sh
-
-/usr/bin/ssh-agent xinit -- :1 &

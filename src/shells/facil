@@ -1,3 +1,0 @@
-#!/bin/sh
-
-gunzip -dc $1 | tar -xvf -
