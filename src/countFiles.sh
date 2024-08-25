@@ -1,6 +1,11 @@
 # !/bin/sh
 
-#Shell for counting files of a given path.
-# ls -l prints the files with a '-' at the begining of the file.
+#Shell for counting folders of a given path.
 
-echo "Found `ls -l $1 | awk '/^-/ { print $1 }' | wc -l` files."
+if test $# -eq 0
+	then echo "Usage: countFiles [PATH]"
+	exit 2
+else 
+	echo "Found `ls -l $1 | awk '/^-/ { print $1 }' | wc -l` files."
+fi
+
