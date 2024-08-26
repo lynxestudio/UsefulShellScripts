@@ -21,5 +21,6 @@ When we execute a shell script, the shell intepreter goes through the ASCII text
 <li><b>covertUpper2lower.sh</b> convert the files names of a given path to Lowercase.</li>
 <li><b>burnFolder2iso.sh</b> makes the iso image of a given folder.</li>
 <li><b>PgAgent.sh</b> starts or stops a PostgreSQL database.</li>
+<li><b>killmyprocess.sh</b> kills a process running by the user.</li>
 </ul>
 </p>
