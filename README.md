@@ -21,8 +21,8 @@ You can get the following scripts in the src folder:
 <li><b><a href="src/countFolders.sh">countFolders.sh</a>:</b> Counts the total number of folder in a given path.</li>
 <li><b><a href="src/countFiles.sh">countFiles.sh</a>:</b> Counts the total of files in a given path (same logic that countFolder).</li>
 <li><b><a href="src/convertLower2Upper.sh">convertLower2Upper.sh</a>:</b> convert the files names of a given path to Uppercase.</li>
-<li><b><a href="src/covertUpper2lower.sh">covertUpper2lower.sh</a>:</b> convert the files names of a given path to Lowercase.</li>
-<li><b><a href="src/burnFolder2iso.sh">burnFolder2iso.sh</a>:</b> makes the iso image of a given folder.</li>
+<li><b><a href="src/convertUpper2lower.sh">covertUpper2lower.sh</a>:</b> convert the files names of a given path to Lowercase.</li>
+<li><b><a href="src/burnfolder2iso.sh">burnfolder2iso.sh</a>:</b> makes the iso image of a given folder.</li>
 <li><b><a href="src/PgAgent.sh">PgAgent.sh</a>:</b> starts or stops a PostgreSQL database.</li>
 <li><b><a href="src/killmyprocess.sh">killmyprocess.sh</a>:</b> kills a process running by the user.</li>
 <li><b><a href="src/showFrequencyWords.sh">showFrequencyWords.sh</a>:</b> Displays the word frequency in a text file.</li>
