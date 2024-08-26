@@ -19,5 +19,6 @@ When we execute a shell script, the shell intepreter goes through the ASCII text
 <li><b>countFiles.sh</b> Counts the total of files in a given path (same logic that countFolder).</li>
 <li><b>convertLower2Upper.sh:</b> convert the files names of a given path to Uppercase.</li>
 <li><b>covertUpper2lower.sh</b> convert the files names of a given path to Lowercase.</li>
+<li><b>burnFolder2iso.sh</b> makes the iso image of a given folder.</li>
 </ul>
 </p>
