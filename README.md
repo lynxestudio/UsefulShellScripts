@@ -12,6 +12,8 @@ The shell acts as the interface between you and the Linux System, allowing you t
 The basic concept of a shell script is a list of commands, which are listed in the order of execution.
 Shell scripts are interpreted. They are ASCII text that is read and execute by the shell interpreter.
 When we execute a shell script, the shell intepreter goes through the ASCII text line by line, and executes each statement, as each line is reached from the top to the bottom.
+</p>
+<p align="justify">
 You can get the following scripts in the src folder:
 </p>
 <p>
