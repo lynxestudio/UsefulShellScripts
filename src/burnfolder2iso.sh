@@ -5,7 +5,7 @@
 # $2 = Folder path
 
 if test $# -eq 0 
-	then echo "Usage: burnfolder2iso [iso name][folder name]"
+	then echo "Usage: $0 [iso name][folder name]"
 	exit 2;
 else
 	mkisofs -r -o $1 $2
