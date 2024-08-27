@@ -26,5 +26,6 @@ You can get the following scripts in the src folder:
 <li><b><a href="src/PgAgent.sh">PgAgent.sh</a>:</b> starts or stops a PostgreSQL database.</li>
 <li><b><a href="src/killmyprocess.sh">killmyprocess.sh</a>:</b> kills a process running by the user.</li>
 <li><b><a href="src/showFrequencyWords.sh">showFrequencyWords.sh</a>:</b> Displays the word frequency in a text file.</li>
+<li><b><a href="src/showFileSize.sh">showFileSize.sh</a>:</b> Displays the size of the files of a givrn path.</li>
 </ol>
 </p>
