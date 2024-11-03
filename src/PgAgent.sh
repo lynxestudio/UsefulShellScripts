@@ -7,7 +7,7 @@ LOGFILE=/usr/local/pgsql/data/postmaster.log
 case "$1" in
 			start)
 				echo -n "Starting PostgreSQL..."
-				su - postgres -c "$PGCTL -D $PGDATA -l $LOGFILE start "
+				su -l postgres -c "$PGCTL -D $PGDATA -l $LOGFILE start "
 				;;
 			stop)
 				echo -n "Stopping PostgreSQL..."
