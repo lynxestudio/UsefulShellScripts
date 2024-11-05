@@ -53,7 +53,7 @@ Because process is independent of the program it executes and the data it proces
 Anything done by a pipeline can also be done by storing the output of process A into a file or using a file as input for another process.
 </p>
 <div><b>Fig 4. Pipeline using two processes.</b></div>
-<img src="images/pipelines.png"/>
+<img src="images/pipelines2.png"/>
 
 <p align="justify">
 You can get the following scripts in the src folder:
