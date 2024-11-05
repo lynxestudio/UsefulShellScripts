@@ -18,6 +18,9 @@ You build a small and simple utility and we use it as one link in a string of ot
 </p>
 <div><b>Fig 1. Linux architecture</b></div>
 <img src="images/unix_shells.png"/>
+<p align="justify">
+The purpose of the shell is to start processes running your commands, the shell stands between the user (you) and the system. The command is not directly executed, rather, the shell reads the input, interprets the command and then creates the process that executes the command.
+</p>
 <h3>Why Use the Command Line?</h3>
 <p align="justify">
 Linux provides thousands of shell utilities that range from simple programs for creating, examining, and modifying files and hardware configurations to complex utilities that enable low-level capabilities such as file systems, security and networking.
