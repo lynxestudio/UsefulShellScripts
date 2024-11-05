@@ -19,7 +19,7 @@ You build a small and simple utility and we use it as one link in a string of ot
 <div><b>Fig 1. Linux architecture</b></div>
 <img src="images/unix_shells.png"/>
 <p align="justify">
-The purpose of the shell is to start processes running your commands, the shell stands between the user (you) and the system. The command is not directly executed, rather, the shell reads the input, interprets the command and then creates the process that executes the command.
+The purpose of the shell is to start processes running your commands, the shell stays between the user (you) and the system. The command is not directly executed, rather, the shell reads the input, interprets the command and then creates the process that executes the command.
 </p>
 <h3>Why Use the Command Line?</h3>
 <p align="justify">
