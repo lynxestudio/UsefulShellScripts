@@ -11,7 +11,7 @@ A shell is an environment where we can run commands, programs, and others shell 
 </p>
 <p align="justify">
 Linux offers many different shells, however, Bash has become the default standard on Linux.
-Bash understands a whole of standard Linux commands or can run any command stored in an executable file. In addition, It can also execute shell scripts (text files that contain Linux commands).
+Bash understands a whole of standard Linux commands or can run any command stored in an executable file. In addition, it can also execute shell scripts (text files that contain Linux commands).
 </p>
 <p align="justify">
 You build a small and simple utility and we use it as one link in a string of others to form a command. The shell acts as the interface between you and the Linux System, allowing you to enter commands for the operating system to execute.
