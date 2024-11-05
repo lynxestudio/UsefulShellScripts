@@ -68,3 +68,5 @@ You can get the following scripts in the src folder:
 <li><b><a href="src/showFileSize.sh">showFileSize.sh</a>:</b> Displays the size of the files of a given path.</li>
 </ol>
 </p>
+<b>References:</b>
+<p>Swart,R.[1990]<cite>UNIX Applications Programming: Mastering the Shell,USA,<b>SAMS</b></cite></p>
