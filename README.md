@@ -47,12 +47,12 @@ All three standard streams are connected to the process’s controlling terminal
 <p align="justify">
 Because process is independent of the program it executes and the data it processes. The process does not care how the data it is using is generated or consumed. This mechanism allows the output of one process to be connected to the input of another.
 </p>
-<div><b>Fig 3. Pipeline using two processes.</b></div>
+<div><b>Fig 3. Pipeline using one process.</b></div>
 <img src="images/pipelines.png"/>
 <p align="justify">
 Anything done by a pipeline can also be done by storing the output of process A into a file or using a file as input for another process.
 </p>
-<div><b>Fig 4. Pipeline using two processes.</b></div>
+<div><b>Fig 4. Pipeline using a file as an input.</b></div>
 <img src="images/pipelines2.png"/>
 
 <p align="justify">
