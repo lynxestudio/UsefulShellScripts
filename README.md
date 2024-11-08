@@ -73,6 +73,10 @@ You can get the following scripts in the src folder:
 </p>
 <b>References:</b>
 <p>
-Swart,R.[1990],<cite>UNIX Applications Programming: Mastering the Shell,USA,<b>SAMS</b></cite></br>
-Waingrow, K.[1999],<cite>UNIX Hints & Hacks,USA,<b>QUE</b></cite>
+<ol>
+<li>
+Swart,R.[1990],<cite>UNIX Applications Programming: Mastering the Shell,USA,<b>SAMS</b></cite>
+</li>
+<li>Waingrow, K.[1999],<cite>UNIX Hints & Hacks,USA,<b>QUE</b></cite></li>
+</ol>
 </p>
