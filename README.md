@@ -1,4 +1,4 @@
-# Some useful shell scripts
+# Introduction to shell Scripting.
 
 <p align="justify">
 Because Linux has its conceptual roots in the older Unix operating system, many applications are designed to be executed from a command line. Linux has two user interfaces: the Graphical User Interface (GUI) and The command Line, the Shell.
