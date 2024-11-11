@@ -1,7 +1,7 @@
 # Some useful shell scripts
 
 <p align="justify">
-Because Linux has its conceptual roots in the older Unix operating system, many applications are designed to be executed from a command line. Linux has two user interfaces: The command Line and the Graphical User Interface (GUI).
+Because Linux has its conceptual roots in the older Unix operating system, many applications are designed to be executed from a command line. Linux has two user interfaces: the Graphical User Interface (GUI) and The command Line, the Shell.
 </p>
 <h3>What is a Shell?</h3>
 <p align="justify">
@@ -10,7 +10,7 @@ A shell is an environment where we can run commands, programs, and others shell 
 
 </p>
 <p align="justify">
-Linux offers many different shells, however, Bash has become the default standard on Linux.
+Linux offers many different shells; however, Bash has become the default standard on Linux.
 Bash understands a whole of standard Linux commands or can run any command stored in an executable file. In addition, it can also execute shell scripts (text files that contain Linux commands).
 </p>
 <p align="justify">
@@ -69,6 +69,7 @@ You can get the following scripts in the src folder:
 <li><b><a href="src/killmyprocess.sh">killmyprocess.sh</a>:</b> kills a process running by the user.</li>
 <li><b><a href="src/showFrequencyWords.sh">showFrequencyWords.sh</a>:</b> Displays the word frequency in a text file.</li>
 <li><b><a href="src/showFileSize.sh">showFileSize.sh</a>:</b> Displays the size of the files of a given path.</li>
+<li><b><a href="src/backupDir.sh">backupDir.sh</a>:</b> Backups and compress all directories of a given path.</li>
 </ol>
 </p>
 <b>References:</b>
