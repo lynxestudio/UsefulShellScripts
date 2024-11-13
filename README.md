@@ -69,7 +69,8 @@ You can get the following scripts in the src folder:
 <li><b><a href="src/killmyprocess.sh">killmyprocess.sh</a>:</b> kills a process running by the user.</li>
 <li><b><a href="src/showFrequencyWords.sh">showFrequencyWords.sh</a>:</b> Displays the word frequency in a text file.</li>
 <li><b><a href="src/showFileSize.sh">showFileSize.sh</a>:</b> Displays the size of the files of a given path.</li>
-<li><b><a href="src/backupDir.sh">backupDir.sh</a>:</b> Backups and compress all directories of a given path.</li>
+<li><b><a href="src/backupDir.sh">backupDir.sh</a>:</b> Backups and compress all directories of a given path, and adds the datetime to the name of each backup file.</li>
+<li><b><a href="src/imageConverter.sh">imageConverter.sh</a>:</b> Uses some options in ImageMagick convert command to convert images from one format to another. </li>
 </ol>
 </p>
 <b>References:</b>
