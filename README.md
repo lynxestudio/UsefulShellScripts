@@ -80,5 +80,6 @@ You can get the following scripts in the src folder:
 Swart,R.[1990],<cite>UNIX Applications Programming: Mastering the Shell,USA,<b>SAMS</b></cite>
 </li>
 <li>Waingrow, K.[1999],<cite>UNIX Hints & Hacks,USA,<b>QUE</b></cite></li>
+<li>Rosen K,Rosinki R, farber J,Host D[1997], UNIX SYSTEM V an introduction 2 edition,Spain,<b>McGrawHill</b></li>
 </ol>
 </p>
